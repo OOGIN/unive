@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@font-face {
+    font-family: "dangdang";
+    src: url("font/Cafe24Dangdanghae/Cafe24Dangdanghae.ttf");
+}
+@font-face {
+    font-family: 'text';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.web{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.back{
+    position: relative;
+    height: 560px;
+    padding: 90px 15px 70px;
+    background: url(/img/dept_texture.png) repeat center top;
+    z-index: -2;
+
+}
+
+.back .book{
+    position: absolute;
+    right: 0;
+    top: 197px;
+    background: no-repeat right top;
+}
+
+.back .paper{
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    z-index: -1;
+    background: no-repeat left bottom;
+}
+
+strong{
+    font-weight: bold;
+    font-family: "dangdang";
+}
+
+.header .MainText{
+    font-size: inherit;
+    display: block;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 47px;
+    line-height: 57px;
+    text-align: center;
+    text-align: center;
+}
+
+.em{
+    font-style: italic;
+    font-family: "dangdang",sans-serif;
+}
+
+.header .SubText{
+    display: block;
+    margin-bottom: 50px;
+    color: #13211e;  
+    font-size: 47px;
+    line-height: 57px;
+    text-align: center;
+    font-family: "dangdang",sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 340px;
+}
+
+.mainUI{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 340px;
+    margin: 0px, 15px, 0, 50px;
+}
+
+.JoinUi{
+    display: table-cell;
+    background: #e6f580;
+    box-sizing: border-box;
+    border: 2px solid black;
+    box-shadow: 0px 3px  0 black;
+    text-align: center;
+    float: left;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    width: 280px;
+    height: 93px;
+}
+
+.JoinUi2{
+    display: table-cell;
+    background: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid black;
+    box-shadow: 0px 3px  0 black;
+    text-align: center;
+    float: left;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    width: 280px;
+    height: 93px;
+}
+
+.text{
+    margin-top: 40px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.sub{
+    margin-top: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+}
+
+.line_Main{
+    background-color: #419639;
+    padding-top: 15px;
+    height: 35px;
+}
+
+.line_left{
+    width: 40%;
+    height: 35px;
+    float: left;
+    margin-left: 12%;
+    margin-right: 5%;
+}
+.line_left a{
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    
+}
+
+.line_right_sns{
+    float: right;
+    width: 85px;
+    height: 35px;
+    margin-right: 165px;
+}
+.line_right a{
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: right;
+    float: left;
+}
+
+.footer_main{
+    width: 1240px;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 45px 30px;
+    height: 55px;
+}
+
+.footer_left{
+    width: 50%;
+    height: 55px;
+    float: left;
+
+}
+.Privacy{
+    color: #419639;
+    font-size: 15px;
+    line-height: 19px;
+    font-family: "text";
+    margin-right: 15px;
+}
+.Cyber{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    font-family: "text";
+}
+
+.footer_right{
+    width: 50%;
+    height: 55px;
+    float: right;
+}
+.footer_right p{
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-family: 'text';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.footer_right .a{
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+}
