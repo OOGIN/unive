@@ -8,18 +8,22 @@
 </head>
 <div id="header">
     <header>
-        <div class="top_of_top">
-            <div class="top_of_left">
+        <div class="top_of_top" id="top_top">
+            <div class="top_of_left" id="white">
                 <span class="FaceBook"><a href="#" title="새창"><img src="/img/sns_facebook.png"></a></span>
                 <span class="Blog"><a href="#" title="새창"><img src="/img/sns_nBlog.png"></a></span>
                 <span class="Youtube"><a href="#" title="새창"><img src="/img/sns_youtube.png"></a></span>
                 <span class="Instar"><a href="#" title="새창"><img src="/img/sns_instagram.png"></a></span>
             </div>
-            <div class="top_of_right">
-                <a href="/login/index.html">로그인</a>
-                
-                <a href="#" class="SkinnyHome" target="_blank" title="새창">종합정보시스템</a>
-                
+            <div class="void_top_of_left" id="black">
+                <span class="FaceBook"><a href="#" title="새창"><img src="/img/void_fecebook.png"></a></span>
+                <span class="Blog"><a href="#" title="새창"><img src="/img/void_Blog.png"></a></span>
+                <span class="Youtube"><a href="#" title="새창"><img src="/img/void_youtube.png"></a></span>
+                <span class="Instar"><a href="#" title="새창"><img src="/img/void_instagram.png"></a></span>
+            </div>
+            <div class="top_of_right" id="top_right">
+                <a href="/login/index.html" id="right1">로그인</a>
+                <a href="#" class="SkinnyHome" target="_blank" title="새창" id="right2">종합정보시스템</a>
                 <div class="top_Language">
                     <button type="button" class="btn_topLanguage" id="language">KOR</button>
                     <div class="listbox" id="listbox">
@@ -38,50 +42,47 @@
                 </div>
             </div>
         </div> 
-        <h1 class="logo">
+        <h1 class="logo" id="logo">
             <a href="index.html">
                 <img src="/img/1614218911462_0.png" alt="">
             </a>
         </h1>
-        <h1 class="hide_logo">
+        <h1 class="hide_logo" id="hide_logo">
             <a href="index.html">
-                <img src="/img/1614218911462_0.png" alt="사이트로고이미지">
-                <span>
-                    <img src="/img/1614218911462_0.png" alt="사이트로고이미지">
-                </span>
+                <img src="/img/black_logo.png" alt="사이트로고이미지" id="black_logo">
             </a>
         </h1>
-        <nav>
+        <nav id="navs">
             <ul id="gnb">
-                <li>
-                    <a href="#">대학안내</a>
+                <li >
+                    <a href="#" id="list1">대학안내</a>
+                </li>
+                <li >
+                    <a href="#" id="list2">입학안내</a>
                 </li>
                 <li>
-                    <a href="#">입학안내</a>
+                    <a href="#" id="list3">학과안내</a>
                 </li>
                 <li>
-                    <a href="#">학과안내</a>
+                    <a href="#" id="list4">대학생활</a>
                 </li>
                 <li>
-                    <a href="#">대학생활</a>
+                    <a href="#" id="list5">GTEC홍보</a>
                 </li>
                 <li>
-                    <a href="#">GTEC홍보</a>
-                </li>
-                <li>
-                    <a href="#">채용정보</a>
+                    <a href="#" id="list6">채용정보</a>
                 </li>
             </ul>
         </nav>
         <div class="main_right">
-            <button type="button" class="search">검색</button>
-            <button type="button" class="recGrp">탐색</button>
-            <button type="button" class="lineMenu">메뉴</button>
+            <button type="button" class="search" id="search">검색</button>
+            <button type="button" class="recGrp" id="recGrp">탐색</button>
+            <button type="button" class="lineMenu" id="lineMenu">메뉴</button>
         </div>
     </header>
 </div>
 <body>
-    <div class="main">
+    <div class="mvisual">
        <div class="list">
             <ul>
                 <li class="on">
@@ -128,17 +129,95 @@
             </ul>
        </div>
         <div class="slide" id="slide">
-            <img src="/img/slide1.png" alt="" class="img1">
-            <img src="/img/slide2.png" alt="" class="img2">
-            <img src="/img/slide3.png" alt="" class="img3">
-            <img src="/img/slide4.png" alt="" class="img4">
-            <img src="/img/slide1.png" alt="" class="img5">
-            <img src="/img/slide2.png" alt="" class="img6">
-            <img src="/img/slide3.png" alt="" class="img7">
-            <img src="/img/slide4.png" alt="" class="img8">
+            <li>
+                <img src="/img/slide1.png" alt="" class="img1">
+                <img src="/img/slide2.png" alt="" class="img2">
+                <img src="/img/slide3.png" alt="" class="img3">
+                <img src="/img/slide4.png" alt="" class="img4">
+                <img src="/img/slide1.png" alt="" class="img5">
+                <img src="/img/slide2.png" alt="" class="img6">
+                <img src="/img/slide3.png" alt="" class="img7">
+                <img src="/img/slide4.png" alt="" class="img8">
+            </li>
+        </div>
+        <div class="NEWS">
+            asdasda
         </div>
     </div>
-
+    <div class="mnews">
+        <div class="news_scroll">
+            <strong class="MIT">NEWS</strong>
+            <div class="scroll_imgs">
+                <a href="#" class="iteam">
+                    <img src="/img/scroll_img1.jpg" alt="">
+                    <P>
+                        <b>시흥시의회 ‘창업생태계 연구<br>회’관계기관과 첫 간담회</b>
+                    </P>
+                </a>
+                <a href="#" class="iteam">
+                    <img src="/img/scroll_img2.jpg" alt="">
+                    <P>
+                        <b>경기과기대, 전기자동차 교육<br>과정·전문인력 양성 '탄력'  출처 <br>: 대학저널(https://dhnews.co.kr)</b>
+                    </P>
+                </a>
+                <a href="#" class="iteam">
+                    <img src="/img/scroll_img3.jpg" alt="">
+                    <P>
+                        <b>배 만들 손 없어서…"이공계 <br>외국인 유학생 채용"</b>
+                    </P>
+                </a>
+                <a href="#" class="iteam">
+                    <img src="/img/scroll_img4.jpg" alt="">
+                    <P>
+                        <b>산업부·법무부, 외국인 유학생<br>조선업계 취업 설명회</b>
+                    </P>
+                </a>
+                <a href="#" class="iteam">
+                    <img src="/img/scroll_img5.jpg" alt="">
+                    <P>
+                        <b>경기과기대 제23회 학위수여식<br>성료</b>
+                    </P>
+                </a>
+            </div>
+            <div class="icon_plus"><a href="#"><img src="/img/icon_noticePlus.png" alt=""></a></div>
+            <div class="hide"></div>
+        </div>
+    </div>
+    <div class="micon">
+        <div class="mfram">
+            <div class="mvall">
+                <a href="">
+                    <img src="/img/icon1.png" alt="">
+                    <p>e-class</p> <br>
+                    <p>온라인강의시스템</p>
+                </a>
+                <a href="">
+                    <img src="/img/icon2.png" alt="">
+                    <p>학생역량</p> <br>
+                    <p>지원시스템</p>
+                </a>
+                <a href="">
+                    <img src="/img/icon3.png" alt="">
+                    <p>인터넷</p> <br>
+                    <p>증명발급</p>
+                </a>
+                <a href="">
+                    <img src="/img/icon4.png" alt="">
+                    <p>한국장학재단</p> <br>
+                    <p>국가장학금신청</p>
+                </a>
+                <a href="">
+                    <img src="/img/icon5.png" alt="">
+                    <p>다솜학사</p> <br>
+                    <p>생활관</p>
+                </a>
+                <a href="">
+                    <img src="/img/icon6.png" alt="">
+                    <p>도서관</p>
+                </a>
+            </div>            
+        </div>
+    </div>
     <div class="footer"></div>
     <script src="main.js"></script>
 </body>
