@@ -98,45 +98,25 @@
        <div class="list">
             <ul>
                 <li class="on">
-                    <label>
-                        <input type="radio" name="lists" id="lists_check" checked>
-                        <span>IT분야</span>
-                    </label>
+                    <button><span id="list_menu">IT분야</span></button>
                 </li>
                 <li>
-                    <label>
-                        <input type="radio" name="lists" id="lists_check">
-                        <span>일반공학분야</span>
-                    </label>
+                    <button><span id="list_menu">일반공학분야</span></button>
                 </li>
                 <li>
-                    <label>
-                        <input type="radio" name="lists" id="lists_check">
-                        <span>일반공학분야</span>
-                    </label>
+                    <button><span id="list_menu">일반공학분야</span></button>
                 </li>
                 <li>
-                    <label>
-                        <input type="radio" name="lists" id="lists_check">
-                        <span>생명안전분야</span>
-                    </label>
-                <li>
-                    <label>
-                        <input type="radio" name="lists" id="lists_check">
-                        <span>건축분야</span>
-                    </label>
+                    <button><span id="list_menu">생명안전분야</span></button>
                 </li>
                 <li>
-                    <label>
-                        <input type="radio" name="lists" id="lists_check">
-                        <span>휴먼사회분야</span>
-                    </label>
+                    <button><span id="list_menu">건축분야</span></button>
                 </li>
                 <li>
-                    <label>
-                        <input type="radio" name="lists" id="lists_check">
-                        <span>디자인분야</span>
-                    </label>
+                    <button><span id="list_menu">휴먼사회분야</span></button>
+                </li>
+                <li>
+                    <button><span id="list_menu">디자인분야</span></button>
                 </li>
             </ul>
        </div>
@@ -361,61 +341,67 @@
                             <div class="slide_img"> 
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>3</p></div>
                                 </a>
                             </div>
                             <div class="slide_img"> 
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>4</p></div>
                                 </a>
                             </div>
                             <div class="slide_img"> 
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>5</p></div>
+                                </a>
+                            </div>
+                            <div class="slide_img"> 
+                                <a href="#">
+                                    <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
+                                    <div class="txtbox"><p>1</p></div>
                                 </a>
                             </div>
                             <div class="slide_img">
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>2</p></div>
                                 </a>
                             </div>
                             <div class="slide_img">
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>3</p></div>
                                 </a>
                             </div>
                             <div class="slide_img">
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>4</p></div>
                                 </a>
                             </div>
                             <div class="slide_img">
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>5</p></div>
                                 </a>
                             </div>
                             <div class="slide_img">
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>1</p></div>
                                 </a>
                             </div>
                             <div class="slide_img">
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>2</p></div>
                                 </a>
                             </div>
                             <div class="slide_img">
                                 <a href="#">
                                     <div class="imgbox"><img src="/img/1677745982018_2.png" alt=""></div>
-                                    <div class="txtbox"><p>123</p></div>
+                                    <div class="txtbox"><p>3</p></div>
                                 </a>
                             </div>
                         </div>
@@ -424,10 +410,83 @@
             </div>
         </div>
     </div>
-
-
+    <div class="mBanner">
+        <button type="button" id="next_btn"></button>
+        <button type="button" id="back_btn"></button>
+        <div class="hide_box">
+            <ul class="slide_width" id="slide_lis">
+                <li title="새창">4</li>
+                <li title="새창">5</li>
+                <li title="새창">6</li>
+                <li title="새창">7</li>
+                <li title="새창">8</li>
+                <li title="새창">1</li>
+                <li title="새창">2</li>
+                <li title="새창">3</li>
+                <li title="새창">4</li>
+                <li title="새창">5</li>
+                <li title="새창">6</li>
+                <li title="새창">7</li>
+                <li title="새창">8</li>
+                <li title="새창">1</li>
+                <li title="새창">2</li>
+                <li title="새창">3</li>
+                <li title="새창">4</li>
+                <li title="새창">5</li>
+            </ul>
+        </div>
+    </div>
     <button type="button" class="btn_scrollTop" id="btn_scrollTop">위로</button>
-    <div class="footer"></div>
+
+    <div class="footer">
+        <div class="familySite">
+            <button type="button" class="FS_left">교내·외 주요기관 바로가기</button>
+            <button type="button" class="FS_right">학과바로가기</button>
+        </div>
+        <footer>
+            <ul class="f_menu">
+                <li><a href="#">대학정보공시</a></li>
+                <li><a href="#">등록금심의위원회회의록</a></li>
+                <li><a href="#">캠퍼스안내</a></li>
+                <li><a href="#">대학자체평가</a></li>
+                <li><a href="#">정부포상 추천대상자 공개검증</a></li>
+                <li><a href="#">교내전화번호</a></li>
+                <li><a href="#">전공심화과정자체평가</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+                <li><a href="#">셔틀·통학버스운행</a></li>
+                <li><a href="#">예·결산공고</a></li>
+                <li class="point"><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일 무단수집거부</a></li>
+                <li class="point"><a href="#">원격지원</a></li>
+                <li><a href="#"> 개인정보 목적 외 이용·제공대장</a></li>
+                <li><a href="#"> 장학재단</a></li>
+            </ul>
+            <ul class="f_sns">
+                <li><a href="#"><img src="/img/f_sns_Face.png" alt=""></a></li>
+                <li><a href="#"><img src="/img/f_sns_Ins.png" alt=""></a></li>
+                <li><a href="#"><img src="/img/f_sns_blog.png" alt=""></a></li>
+                <li><a href="#"><img src="/img/f_sns_You.png" alt=""></a></li>
+            </ul>
+            <ul class="f_mark">
+                <li><a href=""><img src="/img/f_mark1.png" alt=""></a></li>
+                <li><a href=""><img src="/img/f_mark2.png" alt=""></a></li>
+            </ul>
+            <address>
+                <p>
+                    <span><br></span>
+                    <span>(우) 15073 경기도 시흥시 경기과기대로 269(정왕동)</span>
+                    <span>TEL 031-496-4555</span>
+                </p>
+                <p>
+                    <span class="copyright">
+                        ©2020 Gyeonggi University of Science and Technology.
+                    </span>
+                </p>
+            </address>
+        </footer>
+    </div>
     <script src="main.js"></script>
 </body>
 </html> 
+
+         

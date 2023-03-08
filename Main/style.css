@@ -365,7 +365,7 @@ header nav{
     background: rgba(255,255,255,0.2);
     transition: .5s all;
 }
-.list ul li label{
+.list ul li button span{
     display: block;
     height: 45px;
     padding: 0 20px;
@@ -374,7 +374,7 @@ header nav{
     transition: .3s all;
     font-size: 16px;
 }
-.list ul li label::before{
+.list ul li button span::before{
     content: '';
     position: absolute;
     left: -11px;
@@ -386,7 +386,7 @@ header nav{
     transition: .5s all;
     opacity: 0;
 }
-.list ul li label::after{
+.list ul li button span::after{
     content: '';
     position: absolute;
     right: -11px;
@@ -398,20 +398,20 @@ header nav{
     transition: .5s all;
     opacity: 0;
 }
-.list ul li:first-child label::before{
+.list ul li.on button span::before{
     opacity: 0.2;
 }
-.list ul li:last-child label::after{
+.list ul li:last-child button span::after{
     opacity: 0.2;
 }
-.list ul li label:hover{
+.list ul li button span:hover{
     background-color: #fff;
     color: #000;
 }
-.list ul li label:hover::before{
+.list ul li button span:hover::before{
     opacity: 1;
 }
-.list ul li label:hover::after{
+.list ul li button span:hover::after{
     opacity: 1;
 }
 
@@ -683,7 +683,7 @@ header nav{
     height: 2px;
     background-color: #69b848;
     z-index: 1;
-    transition: 0.3s;
+    transition: 0.25s;
 }
 .detailList{
     display: none;
@@ -957,17 +957,15 @@ header nav{
 }
 .slick-track{
     opacity: 1;
-    width: 2282 + 758px;
-    transition: 0.5s;
-    margin-left: -758px;
+    width: 4183px;
+    margin-left: -1140px;
 }
 .slide_imgs{
     position: absolute;
     display: block;
-    border: blue 2px solid;
     overflow: hidden;
     margin: 0;
-    width: 1140px;
+    width: 1120px;
     padding: 0;
     
 }
@@ -980,9 +978,7 @@ header nav{
     float: left;
     vertical-align: top;
     background-color: #f9f9f9;
-    border: red 2px solid;
     margin: 0 15px;
-    
 }
 .Social_Media .mslide .slide_imgs .slick-track .slide_img a .imgbox{
     position: relative;
@@ -1011,6 +1007,7 @@ header nav{
 }
 .Social_Media .slick-track .slide_img a .txtbox p{
     font-size: 16px;
+    text-align: center;
     color: #555555;
     line-height: 24px;
     letter-spacing: -0.5px;
@@ -1019,8 +1016,173 @@ header nav{
     overflow: hidden;
 }
 
+.mBanner{
+    width: 80%;
+    height: 70px;
+    border-top: 1px solid #eeeeee;
+    padding: 0 10%;
+    margin-bottom: 10px;
+}
+.mBanner button{
+    width: 16px;
+    height: 70px;
+    position: absolute;
+}
+.mBanner #next_btn{
+    margin-left: 1230px;
+    background: url(/img/icon_SocialSliderNext.png)no-repeat center center;
+}
+.mBanner #back_btn{
+    margin-left: -20px;
+    background: url(/img/icon_SocialSliderPrev.png)no-repeat center center;
+}
+.mBanner .hide_box{
+    width: 99%;
+    height: 70px;
+    overflow: hidden;
+    margin-left: 1%;
+}
+.mBanner .hide_box .slide_width{
+    width: 310%;
+    height: 100%;
+    margin-left: -1008.5px;
+}
+.mBanner ul li{
+    float: left;
+    width: 190px;
+    height: 40px;
+    margin: 10px 5px 0px 5px;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid black;
+}
 
 
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #4c4d4f;
+}
+.familySite{
+    width: 80%;
+    height: 55px;
+    padding: 0 10%;
+    margin: 0 auto;
+    background-color:#414244;
+}
+.familySite button{
+    float: left;
+    width: 48%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: left;
+    color: #fff;
+    font-family: 'text';
+    background: url(/img/f_quick.png) no-repeat right 50%;
+    margin: 0 1%;
+}
+footer{
+    position: relative;
+    overflow: hidden;
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px;
+    z-index: 0;
+}
+footer .f_menu{
+    overflow: hidden;
+    float: left;
+    width: 580px;
+    box-sizing: border-box;
+    border-right: 1px solid #5e5f61;
+    font-size: 0;
+    text-align: left;
+}
+footer .f_menu li{
+    width: 33.3%;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    vertical-align: top;
+    letter-spacing: -1px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    font-family: 'text';
+}
+footer .f_menu li a{
+    color: #fff;
+}
+footer .f_menu li.point a{
+    color: #a7bf04;
+}
+footer .f_sns{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 220px;
+    height: 27px;
+    font-size: 0;
+    text-align: right;
+    z-index: 50;
+}
+footer .f_sns li{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+footer .f_mark{
+    position: absolute;
+    left: 610px;
+    bottom: 10px;
+    margin-left: 40px;
+    
+}
+footer .f_mark li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #c0c0c0;
+    font-family: 'text';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    vertical-align: top;
+}
+footer address{
+    display: block;
+    float: left;
+    width: calc(100% - 580px);
+    box-sizing: border-box;
+    padding-left: 40px;
+    font-style: normal;
+}
+
+footer address span{
+    margin: 0px 0px 5px;
+    padding: 0px;
+    color: rgb(192, 192, 192);
+    line-height: 17px;
+    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    vertical-align: top;
+    display: block;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+footer address p .copyright{
+    display: block;
+    padding-top: 8px;
+    font-style: normal;
+    font-size: 14px;
+    color: #c0c0c0;
+    font-family: 'Roboto','Noto Sans KR',sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px;
+}
 
 #btn_scrollTop{
     opacity: 0;
@@ -1034,8 +1196,3 @@ header nav{
     font-size: 0px;
     transition: 0.3s;
 }
-.footer{
-    width: 100%;
-    height: 150px;
-}
-

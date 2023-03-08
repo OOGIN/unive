@@ -23,6 +23,11 @@ var detail5 = document.getElementById("detail5")
 var detail6 = document.getElementById("detail6")
 var back = document.getElementById("L_btn")
 var next = document.getElementById("R_btn")
+var slick_track = document.getElementById("slick-track")
+var next_btn = document.getElementById("next_btn")
+var back_btn = document.getElementById("back_btn")
+var slide_lis = document.getElementById("slide_lis")
+var scrollTop = document.getElementById("btn_scrollTop")
 
 
 var scrolldown = document.addEventListener('scroll',function(){
@@ -193,6 +198,7 @@ hover6.addEventListener("mouseenter",function(){
     document.getElementById("sub_M").style.display = "block"
 })
 
+
 if(btn1.className == "default_on"){
     detail1.style.display = "block"
 }
@@ -334,30 +340,60 @@ btn6.onclick = function(){
         detail1.style.display = "none"
     }
 }
-var move_count = 0;
 
+var move_count = -760;
 next.onclick = function(){
-    move_count = move_count+-379;
-    var move=  String(move_count)
-    if(move_count <= -1137){
-        document.getElementById("slick-track").style.marginLeft = "0px"
-        move_count = 0;
-        
+    move_count = move_count + -380;
+    if(move_count > -2661){
+        slick_track.style.marginLeft =move_count+"px"
+        slick_track.style.transition = '0.5s ease-out'
     }
     else{
-        document.getElementById("slick-track").style.marginLeft = move+"px"
-        alert(move_count)
+        move_count = -760;
+        slick_track.style.marginLeft = move_count +"px"
+        slick_track.style.transition = '0s'
     }
 }
 back.onclick = function(){
-    move_count = move_count+379;
     var move=  String(move_count)
-    if(move_count >= 0){
-        document.getElementById("slick-track").style.marginLeft = "-1137px"
-        move_count = -1137;
+    move_count = move_count+380;
+    if(move_count <= 380){
+        slick_track.style.marginLeft = move+"px"
+        slick_track.style.transition = '0.5s ease-out'
+    }
+    if(move_count == 380){
+        move_count = -1900;
+        var reset = String(move_count)
+        slick_track.style.marginLeft = reset + "px"
+        slick_track.style.transition = '0s'
+    }
+}
+var left = -1008.5;
+next_btn.onclick = function(){
+    if(left <= -2420){
+        left = -806.8
+        slide_lis.style.marginLeft = left +"px"
+        slide_lis.style.transition = '0s'
     }
     else{
-        document.getElementById("slick-track").style.marginLeft = move+"px"
-       
+    left = left + -201.7;
+    slide_lis.style.marginLeft = left + "px"
+    slide_lis.style.transition = '0.3s ease-out'
     }
+}
+back_btn.onclick = function(){
+    if(left >= 0){
+        left = -1613.6
+        slide_lis.style.marginLeft = left + "px"
+        slide_lis.style.transition = '0s'
+    }
+    else{
+        left = left + 201.7;
+        slide_lis.style.marginLeft = left + "px"
+        slide_lis.style.transition = '0.3s ease-out'
+    }
+}
+
+scrollTop.onclick = function(){
+    window.scrollTo({top:0,behavior: "smooth"})
 }
